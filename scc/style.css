@@ -204,19 +204,13 @@ a {
 }
 .item {
   width: 270px;
-}
-.subtitle::before {
-  display: block;
-  content: "";
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-
   height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
   margin-bottom: 30px;
 }
-
+.advantage-icon {
+}
 .advantage {
   display: flex;
   margin-bottom: 0;
@@ -275,7 +269,7 @@ a {
 /* Секция Наша команда  */
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
+
   background: #f5f4fa;
 }
 
@@ -316,7 +310,42 @@ a {
 .name {
   margin-bottom: 10px;
 }
+/* Секция наши клиенты */
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--white-color);
+}
+.clients-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
 
+  width: 170px;
+  height: 92px;
+}
+.clients-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-list .icon:hover,
+.clients-list .icon:focus {
+  color: var(--accent-color);
+}
+
+.clients-icon1,
+.clients-icon2,
+.clients-icon3,
+.clients-icon4,
+.clients-icon5,
+.clients-icon6 {
+  fill: currentColor;
+}
+.clients-item {
+  display: block;
+  background-size: contain;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
 /* Секция footer  */
 .logo-footer {
   display: block;
