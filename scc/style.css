@@ -216,9 +216,7 @@ a {
   height: 120px;
   margin-bottom: 30px;
 }
-.icon-antenn::before {
-  background-image: url();
-}
+
 .advantage {
   display: flex;
   margin-bottom: 0;
