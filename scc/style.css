@@ -135,6 +135,20 @@ a {
   padding-top: 200px;
   background-color: #2f303a;
 }
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/heroimg-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .hero-title {
   margin-left: auto;
   margin-right: auto;
@@ -148,7 +162,7 @@ a {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  background-color: #2f303a;
+
   color: var(--white-color);
 }
 .hero .button {
@@ -190,6 +204,20 @@ a {
 }
 .item {
   width: 270px;
+}
+.subtitle::before {
+  display: block;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+
+  height: 120px;
+  margin-bottom: 30px;
+}
+.icon-antenn::before {
+  background-image: url(../images/);
 }
 .advantage {
   display: flex;
@@ -396,7 +424,10 @@ address {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+/* .proj-item {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+} */
 .proj-item:nth-child(n + 1) {
   margin-right: 30px;
   margin-bottom: 30px;
