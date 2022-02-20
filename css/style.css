@@ -467,9 +467,9 @@ address {
   margin-bottom: 9px;
 }
 .footer-subtitle {
-  margin-left: 156px;
   margin-top: 0;
   margin-bottom: 20px;
+  padding: 0;
 
   font-weight: 700;
   font-size: 14px;
@@ -480,7 +480,6 @@ address {
 }
 .footer-social-list {
   display: flex;
-  margin-left: 70px;
 }
 
 .social-links-footer {
@@ -502,6 +501,9 @@ address {
 .social-links-footer:hover,
 .social-links-footer:focus {
   background-color: var(--accent-color);
+}
+.footer-social {
+  margin-left: 156px;
 }
 
 /* Основная секция портфолио с работами */
