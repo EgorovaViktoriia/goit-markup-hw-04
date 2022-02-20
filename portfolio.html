@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./scc/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Секция Header -->
@@ -37,16 +37,19 @@
             <li class="item-header"><a class="link" href="">Контакты</a></li>
           </ul>
           </nav>
-
           <ul class="contacts">
-            <li>
-              <a class="contacts-link-header" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+            <li class="address-link" >
+              <a class="contacts-link-header" href="mailto:info@devstudio.com" 
+                > <svg class="email-phone" width="16" height="12" >
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>info@devstudio.com</a
               >
-            </li>
+            </li class="address-link" >
             <li>
               <a class="contacts-link-header" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+                ><svg class="email-phone" width="10" height="16" >
+              <use href="./images/icons.svg#icon-mobile"></use>
+            </svg>+38 096 111 11 11</a
               >
             </li>
           </ul>

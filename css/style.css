@@ -109,6 +109,7 @@ a {
 .contacts li:not(:last-child) {
   margin-right: 50px;
 }
+
 .contacts-link-header {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -120,8 +121,17 @@ a {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.contacts-link:hover,
-.contacts-link:focus {
+.email-phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.email-phone:hover,
+.email-phone:focus {
+  fill: var(--accent-color);
+}
+
+.contacts-link-header:hover,
+.contacts-link-header:focus {
   color: var(--accent-color);
 }
 .main-nav {
@@ -204,17 +214,21 @@ a {
 }
 .item {
   width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
 }
-.advantage-icon {
-}
+
 .advantage {
   display: flex;
   margin-bottom: 0;
   margin-top: 0;
+}
+.icon-items {
+  display: flex;
+  height: 120px;
+  background-color: #f5f4fa;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .subtitle {
@@ -310,6 +324,37 @@ a {
 .name {
   margin-bottom: 10px;
 }
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  padding-bottom: 30px;
+  padding-left: 0;
+}
+.social-icon-team {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.social > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon-team:focus,
+.social-icon-team:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.icon-team {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
 /* Секция наши клиенты */
 .our-clients {
   padding-top: 94px;
@@ -320,9 +365,7 @@ a {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-
-  width: 170px;
-  height: 92px;
+  padding-left: 0;
 }
 .clients-list > li:not(:last-child) {
   margin-right: 30px;
@@ -338,12 +381,27 @@ a {
 .clients-icon4,
 .clients-icon5,
 .clients-icon6 {
+  display: block;
   fill: currentColor;
 }
-.clients-item {
+.clients-list .icon {
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  color: #afb1b8;
+}
+
+.clients-list .clients-item {
   display: block;
   background-size: contain;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-list .clients-item:hover,
+.clients-list .clients-item:focus {
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 /* Секция footer  */
