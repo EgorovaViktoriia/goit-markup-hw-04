@@ -289,7 +289,6 @@ a {
 
 .summ-position {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 .list-workers:not(:last-child) {
   margin-right: 30px;
@@ -328,32 +327,37 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-top: 16px;
   padding-bottom: 30px;
   padding-left: 0;
 }
 .social-icon-team {
-  display: block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
   color: #afb1b8;
   fill: currentColor;
 }
 .social > li:not(:last-child) {
   margin-right: 10px;
 }
-
-.social-icon-team:focus,
-.social-icon-team:hover {
+.social-icon-team:hover,
+.social-icon-team:focus {
+  color: var(--white-color);
+}
+.icon-team:focus,
+.icon-team:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
 
 .icon-team {
+  justify-content: center;
+  align-items: center;
   display: flex;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 
 /* Секция наши клиенты */
@@ -429,6 +433,7 @@ address {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .address {
   margin-top: 0;
@@ -462,6 +467,7 @@ address {
   margin-bottom: 9px;
 }
 .footer-subtitle {
+  margin-left: 156px;
   margin-top: 0;
   margin-bottom: 20px;
 
@@ -471,6 +477,31 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+}
+.footer-social-list {
+  display: flex;
+  margin-left: 70px;
+}
+
+.social-links-footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-icon-footer {
+  width: 20px;
+  height: 20px;
+}
+.footer-social-list > li:not(:last-child) {
+  margin-right: 10px;
+}
+.social-links-footer:hover,
+.social-links-footer:focus {
+  background-color: var(--accent-color);
 }
 
 /* Основная секция портфолио с работами */
