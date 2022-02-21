@@ -114,6 +114,7 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
+  align-items: center;
 
   font-size: 14px;
   font-weight: 500;
@@ -133,9 +134,6 @@ a {
 .contacts-link-header:hover,
 .contacts-link-header:focus {
   color: var(--accent-color);
-}
-.main-nav {
-  display: flex;
 }
 
 /* Секция Главная страница */
@@ -283,12 +281,14 @@ a {
 /* Секция Наша команда  */
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
 
   background: #f5f4fa;
 }
 
 .summ-position {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .list-workers:not(:last-child) {
   margin-right: 30px;
@@ -329,26 +329,21 @@ a {
   align-items: center;
 
   margin-top: 16px;
-  padding-bottom: 30px;
   padding-left: 0;
 }
 .social-icon-team {
   width: 20px;
   height: 20px;
   color: #afb1b8;
-  fill: currentColor;
 }
 .social > li:not(:last-child) {
   margin-right: 10px;
 }
-.social-icon-team:hover,
-.social-icon-team:focus {
-  color: var(--white-color);
-}
+
 .icon-team:focus,
 .icon-team:hover {
-  color: var(--white-color);
   background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 .icon-team {
@@ -358,6 +353,7 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  fill: currentColor;
 }
 
 /* Секция наши клиенты */
@@ -378,6 +374,7 @@ a {
 .clients-list .icon:hover,
 .clients-list .icon:focus {
   color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .clients-icon1,
@@ -404,11 +401,6 @@ a {
 .clients-list .clients-item {
   width: 170px;
   height: 92px;
-}
-.clients-list .clients-item:hover,
-.clients-list .clients-item:focus {
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
 }
 /* Секция footer  */
 .logo-footer {
@@ -549,6 +541,8 @@ address {
 .btn-menu:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Список работ с img */
@@ -608,4 +602,12 @@ address {
   border-right: 1px solid#ECECEC;
   border-bottom: 1px solid#ECECEC;
   border-left: 1px solid#ECECEC;
+}
+.project-link {
+  display: block;
+}
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
